@@ -32,7 +32,7 @@ public class Track implements Serializable {
     this.cdId = cdId;
   }
 
-  @Column(name="cd_id")
+  @Column(name="cd_id", insertable = false, updatable = false)
   private int cdId;
 
   //Methods
